@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  user-select: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+#main-container {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  background-color: #1b263b;
+  color: #e0e1dd;
+  border-radius: 10px;
+}
+
+.digits-container {
+  margin: 20px 0 0 0;
+  height: 100px;
+  width: 300px;
+  font-size: 50px;
+}
+
+.column {
+  margin: 0 10px 0 10px;
+}
+
+.buttons-container {
+  height: 100px;
+  width: 300px;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+.button {
+  margin: 0 10px 0 10px;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-color: #778da9;
+  color: #e0e1dd;
+  cursor: pointer;
+  border: 1px solid #e0e1dd;
+}
+
+.start-btn {
+  background-color: #008000;
+}
+
+.stop-btn {
+  background-color: #9e2a2b;
+}
+
+.button:hover {
+  filter: brightness(110%);
+}
+
+.button:active {
+  filter: brightness(95%);
+}
+
+.laps-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 300px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.laps-container::-webkit-scrollbar {
+  display: none;
+}
+
+.laps-container div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  align-items: center;
+  height: 20px;
+  width: 100%;
+  scroll-snap-align: start;
+  border-top: 1px solid #e0e1dd;
+  border-bottom: 1px solid #e0e1dd;
+}

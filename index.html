@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stopwatchStyles.css" />
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <div id="main-container" class="center">
+      <div class="digits-container center">
+        <div id="mins" class="digits">00</div>
+        <div class="column">:</div>
+        <div id="secs" class="digits">00</div>
+        <div class="column">:</div>
+        <div id="msecs" class="digits">00</div>
+      </div>
+      <div class="buttons-container center">
+        <div class="button lap-btn center">Lap</div>
+        <div class="button rst-btn center hide">Reset</div>
+        <div class="button start-btn center">Start</div>
+        <div class="button stop-btn center hide">Stop</div>
+      </div>
+      <div class="laps-container"></div>
+    </div>
+    <script src="stopwatchScript.js"></script>
+  </body>
+</html>
